@@ -13,8 +13,8 @@ import {
 } from "../../components/homepage";
 
 const StyledBox = styled(Box)({
- background: `url(https://images.pexels.com/photos/380330/pexels-photo-380330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)`,
-   //backgroundColor: "white",
+  background: `url(https://images.pexels.com/photos/380330/pexels-photo-380330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)`,
+  //backgroundColor: "white",
   backgroundSize: "cover",
   backgroundPosition: "Top Center",
   backgroundRepeat: "no-repeat",
@@ -28,6 +28,7 @@ const HomePage = () => {
   const [routes, setRoutes] = useState([]);
   const [parcels, setParcels] = useState([]);
   const [isroutes, setIsRoutes] = useState(false);
+  
 
   const fetchData = async (endpoints) => {
     const requests = endpoints.map((endpoint) => {
@@ -65,7 +66,6 @@ const HomePage = () => {
         const [Routes, Parcels] = await fetchData(endpoints);
         setRoutes(Routes);
         setParcels(Parcels);
-        console.log(parcels);
         setIsRoutes(true);
       } catch (error) {
         console.error("Error fetching data:", error);

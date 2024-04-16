@@ -66,7 +66,7 @@ const SubHeader = ({
                 {des}
               </Typography>
 
-              <PrimaryButton text={btext} width={"300px"} pad={["0.6rem"]} variant={"outlined"} onButClick={() => navigate(`/dashboard`)}/>
+              <PrimaryButton text={btext} width={"300px"} pad={["0.6rem"]} variant={"outlined"} onButClick={() => navigate(`/`)}/>
             </StyledTextBox>
             <Box></Box>
           </Stack>
