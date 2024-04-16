@@ -87,7 +87,7 @@ const HomePage = () => {
         </Container>
       </StyledBox>
       <Slider
-        title="Send parcels nationwide"
+        title="Click on a route to create parcel"
         data={routes}
         isroutes={isroutes}
       />
